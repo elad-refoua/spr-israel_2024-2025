@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כנס המחקר השנתי בפסיכותרפיה - SPR-IL</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #106ba3 0%, #0d4b6f 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+        
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .logo-img {
+            height: 60px;
+            max-width: 180px;
+            object-fit: contain;
+        }
+        
+        .conference-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        
+        .conference-header {
+            background: linear-gradient(135deg, #2b6cb0 0%, #1e4e8c 100%);
+            color: white;
+            padding: 1.5rem;
+        }
+        
+        .conference-header h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .conference-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .conference-body {
+            padding: 2rem;
+        }
+        
+        .conference-theme {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: #2b6cb0;
+            text-align: center;
+        }
+        
+        .video-section {
+            margin-bottom: 2rem;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+        
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+        }
+        
+        .video-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #2b6cb0;
+        }
+        
+        .video-description {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .speakers {
+            background-color: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .speakers h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #2b6cb0;
+        }
+        
+        .speakers p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            background-color: #2d3748;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer p {
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+        
+        .theoretical-integration {
+            padding: 1.5rem;
+            background-color: #e6f0ff;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .theoretical-integration h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #2b6cb0;
+        }
+        
+        .conference-intro {
+            padding: 1.5rem;
+            background-color: #f1f5f9;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .logos {
+                flex-wrap: wrap;
+            }
+            
+            .logo-img {
+                height: 40px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .conference-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logos" style="background-color: white; padding: 15px; border-radius: 10px; display: flex; justify-content: center; align-items: center; gap: 20px;">
+                <a href="https://freudcenter.huji.ac.il/" target="_blank">
+                    <img src="https://freudcenter.huji.ac.il/sites/default/files/freudcenter/files/lvgv_prvyd_lvrk.png?m=1637235030" alt="מרכז פרויד באוניברסיטה העברית" style="height: 40px; max-width: 120px; object-fit: contain;">
+                </a>
+                <a href="https://www.biu.ac.il/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/he/b/b0/Bar_Ilan_logo.png" alt="אוניברסיטת בר-אילן" style="height: 60px; max-width: 180px; object-fit: contain;">
+                </a>
+                <a href="https://www.psychotherapyresearch.org/" target="_blank">
+                    <img src="https://static.wixstatic.com/media/86c8e6_795e547591dc4ce99da4c0a784d91260~mv2.jpg/v1/fill/w_615,h_137,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6575b461-1de2-40bf-bc37-2cf88c59071f.jpg" alt="SPR - Society for Psychotherapy Research" style="height: 60px; max-width: 180px; object-fit: contain;">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="https://static.wixstatic.com/media/38a166_7a967551f21a4270af2d99ed04e3f04b~mv2.png/v1/fill/w_359,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/38a166_7a967551f21a4270af2d99ed04e3f04b~mv2.png" alt="השלישי המלאכותי" style="height: 40px; max-width: 120px; object-fit: contain;">
+                </a>
+            </div>
+            <h1 class="text-center">הקבוצה הישראלית למחקר בפסיכותרפיה<br>והקליניקה לשירות הקהילה של המחלקה לפסיכולוגיה בבר-אילן<br>כנס המחקר השנתי החמישי</h1>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="conference-intro">
+            <p>
+                כנס המחקר השנתי החמישי של הקבוצה הישראלית למחקר בפסיכותרפיה התקיים בשלושה חלקים. חלקו הראשון של הכנס כלל פאנל אונליין בנושא עבודה טיפולים עם טראומה בעקבות ה-7.10.23.
+            </p>
+            <p>
+                חלקו השני של הכנס כלל פאנל אונליין בנושא שימוש בכלי מלאכותית בפסיכותרפיה וכן ראיון עם פרופ' פיטר פונגי.
+            </p>
+            <p>
+                חלקו השלישי והעיקרי של הכנס התארח ב-28.3.25 במחלקה לפסיכולוגיה באוניברסיטת בר-אילן וכלל 8 פאנלים, 24 הרצאות, ותחרות פוסטרים.
+            </p>
+        </div>
+        
+        <section class="conference-card">
+            <div class="conference-header">
+                <h2>חלק א'</h2>
+                <p>מחקר בפסיכותרפיה בתקופת משבר - ספטמבר 2024</p>
+            </div>
+            <div class="conference-body">
+                <h3 class="conference-theme">עבודה טיפולית עם טראומה בעקבות 7.10.23</h3>
+                
+                <div class="video-section">
+                    <h3 class="video-title">סרטון 1: דברי פתיחה והצגת הנושא המרכזי</h3>
+                    <div class="video-container">
+                        <video controls>
+                            <source src="https://dl.dropboxusercontent.com/scl/fi/xmmuy4mu2epx0gqj8orht/SPR-IL2024-opening-evening-26-09-24-Part1-Intro.mp4?rlkey=vxct6b8439cwjdtavf6fykfgb&dl=0" type="video/mp4">
+                            הדפדפן שלך אינו תומך בתג וידאו.
+                        </video>
+                    </div>
+                    <p class="video-description">
+                        החלק הראשון של הערב האקדמי כולל דברי פתיחה מאת פרופ' גארי דיימונד, פרופ' אשכול רפאלי, ופרופ' שרון זיו-ביימן המציגים את המסגרת התיאורטית לדיון בטראומה קולקטיבית. הפתיחה מתייחסת להמשגות עכשוויות של טראומה ומציגה את הנושא המרכזי של הכנס: עבודה טיפולית עם טראומה בעקבות אירועי 7 באוקטובר 2023.
+                    </p>
+                </div>
+                
+                <div class="video-section">
+                    <h3 class="video-title">סרטון 2: פאנל מומחים בנושא עבודה טיפולית עם טראומה</h3>
+                    <div class="video-container">
+                        <video controls>
+                            <source src="https://dl.dropboxusercontent.com/scl/fi/m0ai255mtlqfnnuuwz2tk/SPR-IL2024-opening-evening-26-09-24-Part2-Panel.mp4?rlkey=625fea1j7q65wknxhehgqasy3&dl=0" type="video/mp4">
+                            הדפדפן שלך אינו תומך בתג וידאו.
+                        </video>
+                    </div>
+                    <p class="video-description">
+                        פאנל מומחים בהנחיית פרופ' שרון זיו-ביימן ופרופ' אשכול רפאלי, עם משתתפים מובילים בתחום הטראומה והפסיכותרפיה: פרופ' דני ברום, פרופ' יאיר בר-חיים, פרופ' יונתן הפרט, ד"ר ניצה נקש אקסלרוד, ופרופ' רבקה תובל-משיח. הדיון מתמקד בהיבטים הייחודיים של טיפול בטראומה קולקטיבית ובאתגרים העומדים בפני מטפלים בעקבות אירועי אוקטובר 2023.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="conference-card">
+            <div class="conference-header">
+                <h2>חלק ב'</h2>
+                <p>המשך כנס המחקר בפסיכותרפיה - מרץ 2025</p>
+            </div>
+            <div class="conference-body">
+                <h3 class="conference-theme">שימוש בכלי בינה מלאכותית בפסיכותרפיה</h3>
+                
+                <div class="video-section">
+                    <h3 class="video-title">מושב הערב המלא: בינה מלאכותית בפסיכותרפיה - היבטים תיאורטיים ויישומיים</h3>
+                    <div class="video-container">
+                        <video controls>
+                            <source src="https://dl.dropboxusercontent.com/scl/fi/i625cme1cao1tlhsfzhlc/video1264352763.mp4?rlkey=ryfi8mpptkgcbrk5r7cizsthc&dl=0" type="video/mp4">
+                            הדפדפן שלך אינו תומך בתג וידאו.
+                        </video>
+                    </div>
+                    <p class="video-description">
+                        מושב הערב עוסק בשימוש בכלי בינה מלאכותית בפסיכותרפיה. ההקלטה מתחילה בדברי פתיחה מאת פרופ' גארי דיימונד ופרופ' אשכול רפאלי. לאחריה, מופיע פאנל ובו הרצאות המציגות מחקרים עדכניים בנושא הערב מפי פרופ' דנה אציל-סלונים, ד"ר קרן ירמיה, פרופ' (דרגה מוצעת) זוהר אליוסף ויובל הבר, בהנחיית אלעד רפואה. חלק מרכזי במושב הוא שיחה מיוחדת בין ד"ר קרן ירמיה ופרופ' פיטר פונגי על התפתחות השדה והשלכות האינטגרציה של טכנולוגיות מתקדמות בתהליכים טיפוליים.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 - הקבוצה הישראלית למחקר בפסיכותרפיה</p>
+            <p>SPRIsrael2024@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
